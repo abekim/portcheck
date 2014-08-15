@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- the header -->
+    <div class="container">
+        <div id="header">
+            <div id="logo">Port Checker API</div>
+            <div id="sublogo">Is this port open?</div>
+        </div>
+        <div id="about">
+            <div class="content">
+                <p><span class="text">
+                    Port Checker API is a simple tool that checks if a port is open at a host. You can access the API methods by making a GET request to
+                    <br />
+                    <span class="code">http://portchecker.herokuapp.com/:host/:port</span>.
+                </span></p>
+            </div>
+        </div>
+        <div id="docs">
+            <h3 class="subheader">DOCUMENTATION</h3>
+            <span class="text">Example response from
+                <span class="code">/google.com/80</span>
+            </span>
+            <p>
+                <span class="text codeblock">{ "data": "google.com:80 is open" }</span>
+            </p>
+        </div>
+    </div>
+{% endblock %}
